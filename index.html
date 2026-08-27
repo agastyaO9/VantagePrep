@@ -10,12 +10,15 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Vantage Prep | Where Every Student Gets Seen, Not Just Taught">
 <meta property="og:description" content="Small-group math for grades 6–8. Capped at 10 students, weekly testing, full transparency for parents, money-back guarantee.">
-<meta property="og:image" content="">
-<!-- TODO: add a 1200x630 preview image URL above once you have a photo/logo -->
+<meta property="og:image" content="og-image.png">
+<!-- Once the site has a real domain, change the line above to the full URL,
+     e.g. https://yourdomain.com/og-image.png . Facebook, iMessage and WhatsApp
+     will not render a relative path. -->
 <meta name="twitter:card" content="summary_large_image">
 
-<!-- Inline SVG favicon: maroon square with a V -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%237A1E30'/%3E%3Ctext x='50' y='72' font-family='Georgia,serif' font-size='58' font-weight='bold' fill='%23C99A3B' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+<!-- Brand mark, inline SVG favicon plus a PNG app icon for iOS home screens -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%22100%22%20fill%3D%22%237A1E30%22%2F%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2288%22%20fill%3D%22none%22%20stroke%3D%22%23C99A3B%22%20stroke-width%3D%224%22%2F%3E%3Cg%20transform%3D%22translate%28100%20100%29%20scale%281.12%29%20translate%28-100%20-100%29%20translate%281%20-1%29%22%20fill%3D%22%23F3EFE9%22%3E%3Cpath%20d%3D%22M48%2058%20L79%2058%20L100%20118%20L123%2058%20L150%2058%20L100%20148%20Z%22%2F%3E%3Crect%20x%3D%2241%22%20y%3D%2254%22%20width%3D%2245%22%20height%3D%228%22%20rx%3D%222.5%22%2F%3E%3Crect%20x%3D%22117%22%20y%3D%2254%22%20width%3D%2240%22%20height%3D%228%22%20rx%3D%222.5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,9 +102,14 @@
     padding:14px 24px;max-width:1120px;margin:0 auto;min-height:var(--nav-h);
   }
   .logo{
+    display:flex;align-items:center;gap:12px;
     font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.5rem;
-    color:var(--maroon);letter-spacing:0.5px;line-height:1.2;
+    color:var(--maroon);letter-spacing:0.5px;line-height:1;
   }
+  .logo-mark{width:42px;height:42px;flex-shrink:0;display:block;}
+  .logo-word{white-space:nowrap;}
+  footer .logo{color:#fff;font-size:1.35rem;}
+  footer .logo-mark{width:38px;height:38px;}
   .nav-links{display:flex;gap:28px;font-weight:600;font-size:0.92rem;align-items:center;}
   .nav-links a{color:var(--text-dark);transition:color .2s;}
   .nav-links a:hover{color:var(--maroon);}
@@ -449,7 +457,8 @@
     .approach-hero{padding:28px;}
     .approach-callout, .guarantee-inner, .recommend-card{padding:28px;}
     .section-title{font-size:1.7rem;}
-    .logo{font-size:1.35rem;}
+    .logo{font-size:1.15rem;gap:9px;}
+    .logo-mark{width:34px;height:34px;}
     .nav-cta{padding:9px 14px;font-size:0.8rem;}
     section{padding:56px 0;}
   }
@@ -466,7 +475,10 @@
 <header>
   <nav>
     <input type="checkbox" id="nav-toggle" aria-label="Open navigation menu">
-    <a href="#top" class="logo">Vantage Prep</a>
+    <a href="#top" class="logo" aria-label="Vantage Prep, home">
+      <svg class="logo-mark" viewBox="0 0 200 200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" r="94" fill="#FFFFFF"/><circle cx="100" cy="100" r="94" fill="none" stroke="#3A506B" stroke-width="4"/><line x1="100.00" y1="21.00" x2="100.00" y2="12.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="114.93" y1="15.31" x2="115.28" y2="13.34" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="129.41" y1="19.19" x2="130.10" y2="17.31" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="139.50" y1="31.58" x2="144.00" y2="23.79" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="155.28" y1="34.12" x2="156.57" y2="32.59" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="165.88" y1="44.72" x2="167.41" y2="43.43" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="168.42" y1="60.50" x2="176.21" y2="56.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="180.81" y1="70.59" x2="182.69" y2="69.90" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="184.69" y1="85.07" x2="186.66" y2="84.72" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="179.00" y1="100.00" x2="188.00" y2="100.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="184.69" y1="114.93" x2="186.66" y2="115.28" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="180.81" y1="129.41" x2="182.69" y2="130.10" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="168.42" y1="139.50" x2="176.21" y2="144.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="165.88" y1="155.28" x2="167.41" y2="156.57" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="155.28" y1="165.88" x2="156.57" y2="167.41" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="139.50" y1="168.42" x2="144.00" y2="176.21" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="129.41" y1="180.81" x2="130.10" y2="182.69" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="114.93" y1="184.69" x2="115.28" y2="186.66" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="100.00" y1="179.00" x2="100.00" y2="188.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="85.07" y1="184.69" x2="84.72" y2="186.66" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="70.59" y1="180.81" x2="69.90" y2="182.69" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="60.50" y1="168.42" x2="56.00" y2="176.21" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="44.72" y1="165.88" x2="43.43" y2="167.41" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="34.12" y1="155.28" x2="32.59" y2="156.57" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="31.58" y1="139.50" x2="23.79" y2="144.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="19.19" y1="129.41" x2="17.31" y2="130.10" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="15.31" y1="114.93" x2="13.34" y2="115.28" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="21.00" y1="100.00" x2="12.00" y2="100.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="15.31" y1="85.07" x2="13.34" y2="84.72" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="19.19" y1="70.59" x2="17.31" y2="69.90" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="31.58" y1="60.50" x2="23.79" y2="56.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="34.12" y1="44.72" x2="32.59" y2="43.43" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="44.72" y1="34.12" x2="43.43" y2="32.59" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="60.50" y1="31.58" x2="56.00" y2="23.79" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="70.59" y1="19.19" x2="69.90" y2="17.31" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><line x1="85.07" y1="15.31" x2="84.72" y2="13.34" stroke="#3A506B" stroke-width="2" stroke-linecap="round"/><g transform="translate(100 100) scale(1.12) translate(-100 -100) translate(1 -1)" fill="#7A1E30"><path d="M48 58 L79 58 L100 118 L123 58 L150 58 L100 148 Z"/><rect x="41" y="54" width="45" height="8" rx="2.5"/><rect x="117" y="54" width="40" height="8" rx="2.5"/></g></svg>
+      <span class="logo-word">Vantage Prep</span>
+    </a>
     <label for="nav-toggle" class="nav-burger" aria-hidden="true">
       <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </label>
@@ -1065,7 +1077,10 @@
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <div class="logo">Vantage Prep</div>
+      <div class="logo">
+        <svg class="logo-mark" viewBox="0 0 200 200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" r="94" fill="#7A1E30"/><circle cx="100" cy="100" r="94" fill="none" stroke="#C99A3B" stroke-width="4"/><line x1="100.00" y1="21.00" x2="100.00" y2="12.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="114.93" y1="15.31" x2="115.28" y2="13.34" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="129.41" y1="19.19" x2="130.10" y2="17.31" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="139.50" y1="31.58" x2="144.00" y2="23.79" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="155.28" y1="34.12" x2="156.57" y2="32.59" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="165.88" y1="44.72" x2="167.41" y2="43.43" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="168.42" y1="60.50" x2="176.21" y2="56.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="180.81" y1="70.59" x2="182.69" y2="69.90" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="184.69" y1="85.07" x2="186.66" y2="84.72" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="179.00" y1="100.00" x2="188.00" y2="100.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="184.69" y1="114.93" x2="186.66" y2="115.28" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="180.81" y1="129.41" x2="182.69" y2="130.10" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="168.42" y1="139.50" x2="176.21" y2="144.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="165.88" y1="155.28" x2="167.41" y2="156.57" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="155.28" y1="165.88" x2="156.57" y2="167.41" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="139.50" y1="168.42" x2="144.00" y2="176.21" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="129.41" y1="180.81" x2="130.10" y2="182.69" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="114.93" y1="184.69" x2="115.28" y2="186.66" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="100.00" y1="179.00" x2="100.00" y2="188.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="85.07" y1="184.69" x2="84.72" y2="186.66" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="70.59" y1="180.81" x2="69.90" y2="182.69" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="60.50" y1="168.42" x2="56.00" y2="176.21" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="44.72" y1="165.88" x2="43.43" y2="167.41" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="34.12" y1="155.28" x2="32.59" y2="156.57" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="31.58" y1="139.50" x2="23.79" y2="144.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="19.19" y1="129.41" x2="17.31" y2="130.10" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="15.31" y1="114.93" x2="13.34" y2="115.28" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="21.00" y1="100.00" x2="12.00" y2="100.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="15.31" y1="85.07" x2="13.34" y2="84.72" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="19.19" y1="70.59" x2="17.31" y2="69.90" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="31.58" y1="60.50" x2="23.79" y2="56.00" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="34.12" y1="44.72" x2="32.59" y2="43.43" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="44.72" y1="34.12" x2="43.43" y2="32.59" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="60.50" y1="31.58" x2="56.00" y2="23.79" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="70.59" y1="19.19" x2="69.90" y2="17.31" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><line x1="85.07" y1="15.31" x2="84.72" y2="13.34" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/><g transform="translate(100 100) scale(1.12) translate(-100 -100) translate(1 -1)" fill="#F3EFE9"><path d="M48 58 L79 58 L100 118 L123 58 L150 58 L100 148 Z"/><rect x="41" y="54" width="45" height="8" rx="2.5"/><rect x="117" y="54" width="40" height="8" rx="2.5"/></g></svg>
+        <span class="logo-word">Vantage Prep</span>
+      </div>
       <div class="footer-links">
         <a href="#approach">Our Approach</a>
         <a href="#program">The Program</a>

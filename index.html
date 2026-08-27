@@ -102,7 +102,6 @@
     font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.5rem;
     color:var(--maroon);letter-spacing:0.5px;line-height:1.2;
   }
-  .logo span{color:var(--slate);font-size:0.95rem;display:block;font-weight:700;}
   .nav-links{display:flex;gap:28px;font-weight:600;font-size:0.92rem;align-items:center;}
   .nav-links a{color:var(--text-dark);transition:color .2s;}
   .nav-links a:hover{color:var(--maroon);}
@@ -413,7 +412,6 @@
   footer{background:var(--text-dark);color:rgba(255,255,255,0.8);padding:44px 0 24px;}
   .footer-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:24px;}
   footer .logo{color:#fff;}
-  footer .logo span{color:var(--gold-on-dark);}
   .footer-links{display:flex;gap:24px;font-size:0.9rem;flex-wrap:wrap;}
   .footer-links a:hover{color:#fff;}
   .footer-bottom{
@@ -450,7 +448,6 @@
     .approach-callout, .guarantee-inner, .recommend-card{padding:28px;}
     .section-title{font-size:1.7rem;}
     .logo{font-size:1.35rem;}
-    .logo span{display:none;} /* keep the sticky header compact on phones */
     .nav-cta{padding:9px 14px;font-size:0.8rem;}
     section{padding:56px 0;}
   }
@@ -467,7 +464,7 @@
 <header>
   <nav>
     <input type="checkbox" id="nav-toggle" aria-label="Open navigation menu">
-    <a href="#top" class="logo">Vantage Prep <span>Small-Group Math</span></a>
+    <a href="#top" class="logo">Vantage Prep</a>
     <label for="nav-toggle" class="nav-burger" aria-hidden="true">
       <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </label>
@@ -944,12 +941,7 @@
     <div class="contact-form">
       <h3>Reserve a Spot</h3>
       <p class="form-note">Classes are capped at 10 students, so spots go quickly. Fill out the short sign-up form and we will reply personally within 24 hours.</p>
-      <!--
-        FILL IN: create your Google Form, click Send, copy the link, and paste it
-        into the href below in place of GOOGLE_FORM_URL. Then delete the class
-        "btn-disabled" and the aria-disabled attribute so the button goes live.
-      -->
-      <a href="GOOGLE_FORM_URL" class="btn btn-disabled" aria-disabled="true" target="_blank" rel="noopener">Open the sign-up form</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAuKX-lpjqhd1z6y1qtb-i8kZHQ8Rk23MJwriLEhhrVFPFKA/viewform?usp=header" class="btn" target="_blank" rel="noopener">Open the sign-up form</a>
       <p class="form-note" style="margin-top:16px;margin-bottom:0;">Questions first? Email us using the address on the left and we will get back to you the same day.</p>
     </div>
   </div>
@@ -960,7 +952,7 @@
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <div class="logo">Vantage Prep <span>Small-Group Math</span></div>
+      <div class="logo">Vantage Prep</div>
       <div class="footer-links">
         <a href="#approach">Our Approach</a>
         <a href="#program">The Program</a>

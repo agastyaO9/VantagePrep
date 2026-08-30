@@ -728,9 +728,8 @@
     1. the <div class="team-photo slot"></div> with <img src="yourphoto.jpg" alt="Your Name">
     2. the empty <h3> with the person's name
     3. the empty <span class="team-role"> with their role (e.g. Co-Founder & Instructor)
-    4. the empty <p class="team-bio"> with 2-3 sentences
-    5. the empty <li><span class="fill-line"></span></li> rows with credentials
-       (lead with math for whoever teaches: competition results, coursework, scores)
+    4. the empty <p class="team-bio"> with one lead line, third person
+    5. the empty <li><span class="fill-line"></span></li> rows with bullets
   To add a third person, copy one whole <article class="team-card"> block.
 -->
 <section id="about">
@@ -741,27 +740,30 @@
 
     <div class="team-grid">
 
-      <!-- ===== FOUNDER 1: this is the person who teaches the classes ===== -->
+      <!-- ===== FOUNDER 1: curriculum and technology, not the classroom ===== -->
+      <article class="team-card">
+        <div class="team-photo slot"></div>
+        <h3>Aditya Garg</h3>
+        <span class="team-role">Co-Founder, Curriculum &amp; Technology</span>
+        <p class="team-bio">Aditya leads curriculum and technology.</p>
+        <ul class="credentials">
+          <li>Designs the lesson plans, problem sets, and practice tests used throughout the program.</li>
+          <li>Builds and maintains the site that students and parents interact with.</li>
+          <li>Oversees assessment design and the pre-algebra readiness standard for admission.</li>
+          <li>Collaborates on instruction, student progress reporting, and the direction of future cohorts.</li>
+        </ul>
+      </article>
+
+      <!-- ===== FOUNDER 2: this is the person who teaches every class ===== -->
       <article class="team-card">
         <div class="team-photo slot"></div>
         <h3></h3>
         <span class="team-role">Co-Founder &amp; Instructor</span>
+        <!-- FILL IN: same shape as the tile on the left. One lead line naming what
+             he leads, then three or four bullets in the same third-person voice. -->
         <p class="team-bio"></p>
         <ul class="credentials">
-          <li>Excelled in every math class taken at Bret Harte Middle School and Leland High School.</li>
-          <li>Personally designs every lesson, resource, and practice test used in this program.</li>
           <li>Wants every student to actually get better, and puts in the work for it.</li>
-        </ul>
-      </article>
-
-      <!-- ===== FOUNDER 2: not teaching; add their function after "Co-Founder"
-             e.g. "Co-Founder & Curriculum" or "Co-Founder & Operations" ===== -->
-      <article class="team-card">
-        <div class="team-photo slot"></div>
-        <h3></h3>
-        <span class="team-role">Co-Founder</span>
-        <p class="team-bio"></p>
-        <ul class="credentials">
           <li><span class="fill-line"></span></li>
           <li><span class="fill-line"></span></li>
           <li><span class="fill-line"></span></li>

@@ -223,18 +223,16 @@
   .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;}
   .team-card{
     background:#fff;border:1px solid var(--border);border-radius:var(--radius);
-    padding:32px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+    padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column;
     transition:transform .2s, box-shadow .2s;
   }
   .team-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
-  .team-photo{aspect-ratio:1/1;max-height:320px;margin:0 auto 24px;width:100%;}
-  .team-card h3{font-size:1.35rem;margin-bottom:4px;min-height:36px;}
+  .team-photo{aspect-ratio:4/3;max-height:210px;margin:0 auto 20px;width:100%;}
+  .team-card h3{font-size:1.3rem;margin-bottom:2px;}
   .team-role{
-    display:block;color:var(--maroon);font-weight:700;font-size:0.8rem;
-    letter-spacing:1.2px;text-transform:uppercase;margin-bottom:18px;min-height:20px;
+    display:block;color:var(--maroon);font-weight:700;font-size:0.78rem;
+    letter-spacing:1.2px;text-transform:uppercase;margin-bottom:16px;
   }
-  .team-bio{color:var(--text-muted);font-size:0.97rem;margin-bottom:18px;min-height:80px;}
-  .team-card .credentials{margin-top:auto;}
   .credentials{list-style:none;display:flex;flex-direction:column;gap:12px;}
   .credentials li{
     display:flex;gap:12px;align-items:flex-start;font-size:0.98rem;color:var(--text-dark);
@@ -728,8 +726,7 @@
     1. the <div class="team-photo slot"></div> with <img src="yourphoto.jpg" alt="Your Name">
     2. the empty <h3> with the person's name
     3. the empty <span class="team-role"> with their role (e.g. Co-Founder & Instructor)
-    4. the empty <p class="team-bio"> with one lead line, third person
-    5. the empty <li><span class="fill-line"></span></li> rows with bullets
+    4. the empty <li><span class="fill-line"></span></li> rows with bullets
   To add a third person, copy one whole <article class="team-card"> block.
 -->
 <section id="about">
@@ -745,7 +742,6 @@
         <div class="team-photo slot"></div>
         <h3>Aditya Garg</h3>
         <span class="team-role">Co-Founder, Curriculum &amp; Technology</span>
-        <p class="team-bio">Aditya leads curriculum and technology.</p>
         <ul class="credentials">
           <li>Designs the lesson plans, problem sets, and practice tests used throughout the program.</li>
           <li>Builds and maintains the site that students and parents interact with.</li>
@@ -759,9 +755,7 @@
         <div class="team-photo slot"></div>
         <h3></h3>
         <span class="team-role">Co-Founder &amp; Instructor</span>
-        <!-- FILL IN: same shape as the tile on the left. One lead line naming what
-             he leads, then three or four bullets in the same third-person voice. -->
-        <p class="team-bio"></p>
+        <!-- FILL IN: name, then bullets in the same third-person voice. -->
         <ul class="credentials">
           <li>Wants every student to actually get better, and puts in the work for it.</li>
           <li><span class="fill-line"></span></li>

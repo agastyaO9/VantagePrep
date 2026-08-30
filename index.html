@@ -217,12 +217,6 @@
     letter-spacing:0.5px;border-top:1px dashed var(--border);padding-top:12px;
   }
 
-  .approach-callout{
-    margin-top:56px;background:var(--maroon);
-    color:#fff;border-radius:20px;padding:44px;text-align:center;box-shadow:var(--shadow-lg);
-  }
-  .approach-callout h3{font-size:1.6rem;margin-bottom:14px;}
-  .approach-callout p{opacity:0.92;max-width:680px;margin:0 auto 22px;}
 
   /* ---------- Meet the Team ---------- */
   .team-intro{color:var(--text-muted);font-size:1.05rem;max-width:720px;margin-bottom:44px;}
@@ -320,10 +314,13 @@
   .guarantee-seal{
     width:150px;height:150px;border-radius:50%;border:4px solid var(--gold);
     display:flex;align-items:center;justify-content:center;flex-direction:column;
-    text-align:center;font-family:'Sora',sans-serif;flex-shrink:0;
+    text-align:center;font-family:'Sora',sans-serif;flex-shrink:0;padding:0 14px;
   }
-  .guarantee-seal .pct{font-size:1.8rem;font-weight:800;color:var(--gold-on-dark);}
-  .guarantee-seal .small{font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;}
+  .guarantee-seal .pct{font-size:2.1rem;font-weight:800;color:var(--gold-on-dark);line-height:1.1;}
+  .guarantee-seal .small{
+    font-size:0.68rem;text-transform:uppercase;letter-spacing:1px;
+    line-height:1.5;margin-top:4px;
+  }
   .guarantee h3{font-size:1.7rem;margin-bottom:12px;}
   .guarantee p{opacity:0.92;margin-bottom:8px;}
   .price-tag{
@@ -455,7 +452,7 @@
     .problem-grid, .pillars, .weekly-flow, .included-grid{grid-template-columns:1fr;}
     .hero h1{font-size:1.9rem;}
     .approach-hero{padding:28px;}
-    .approach-callout, .guarantee-inner, .recommend-card{padding:28px;}
+    .guarantee-inner, .recommend-card{padding:28px;}
     .section-title{font-size:1.7rem;}
     .logo{font-size:1.15rem;gap:9px;}
     .logo-mark{width:34px;height:34px;}
@@ -721,12 +718,6 @@
         <div class="not-common">Rare at any price point</div>
       </div>
     </div>
-
-    <div class="approach-callout">
-      <h3>The bottom line for parents:</h3>
-      <p>You will always know exactly what your child is doing, how they're progressing, and what they can now do that they couldn't before. That certainty is the entire foundation of Vantage Prep.</p>
-      <a href="#program" class="btn">See the Program Details</a>
-    </div>
   </div>
 </section>
 
@@ -886,8 +877,8 @@
   <div class="container">
     <div class="guarantee-inner">
       <div class="guarantee-seal">
-        <div class="pct">70%+</div>
-        <div class="small">Score Guarantee</div>
+        <div class="pct">100%</div>
+        <div class="small">Money-Back<br>Guarantee</div>
       </div>
       <div>
         <h3>The Vantage Prep Promise</h3>

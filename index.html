@@ -249,17 +249,9 @@
   .recommend .section-title{color:#fff;}
   .recommend-card{
     background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);
-    border-radius:var(--radius);padding:44px;display:grid;grid-template-columns:0.7fr 1.3fr;
-    gap:36px;align-items:center;
+    border-radius:var(--radius);padding:44px;display:flex;justify-content:center;
   }
-  .recommend-photo{aspect-ratio:1/1;}
-  .quote-mark{
-    font-size:3rem;color:var(--gold-on-dark);font-family:'Fraunces',Georgia,serif;
-    line-height:0.5;display:block;margin-bottom:18px;
-  }
-  .recommend blockquote{font-size:1.15rem;font-style:italic;margin:0 0 20px;color:#fff;min-height:60px;}
-  .recommend .attribution{font-weight:700;color:var(--gold-on-dark);min-height:24px;}
-  .recommend .attribution span{display:block;font-weight:400;font-size:0.85rem;color:rgba(255,255,255,0.75);min-height:20px;}
+  .recommend-photo{aspect-ratio:1/1;width:100%;max-width:340px;}
 
   /* ---------- Program ---------- */
   .program{background:var(--cream);}
@@ -426,7 +418,7 @@
 
   /* ---------- Responsive ---------- */
   @media(max-width:900px){
-    .hero-grid, .team-grid, .trans-grid, .contact-grid, .program-grid, .recommend-card{grid-template-columns:1fr;}
+    .hero-grid, .team-grid, .trans-grid, .contact-grid, .program-grid{grid-template-columns:1fr;}
     .problem-grid, .pillars, .weekly-flow, .included-grid{grid-template-columns:1fr 1fr;}
     .guarantee-inner{grid-template-columns:1fr;text-align:center;}
     .guarantee-seal{margin:0 auto;}
@@ -770,18 +762,10 @@
 <!-- ===================== RECOMMENDATION ===================== -->
 <section class="recommend">
   <div class="container">
-    <span class="eyebrow">Teacher Recommendation</span>
-    <h2 class="section-title">What Educators Say</h2>
+    <span class="eyebrow">Teacher Connections</span>
+    <h2 class="section-title">We're Connected With Teachers</h2>
     <div class="recommend-card">
-      <!-- FILL IN: photo with the recommending teacher -->
       <img class="recommend-photo" style="object-fit:cover;border-radius:var(--radius);" src="mr-wong-recommendation.jpg" alt="Agastya Kondamuri with a math teacher from Bret Harte Middle School">
-      <div>
-        <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-        <!-- FILL IN: the teacher's written recommendation -->
-        <blockquote></blockquote>
-        <!-- FILL IN: teacher name, then title / school -->
-        <div class="attribution"><span></span></div>
-      </div>
     </div>
   </div>
 </section>

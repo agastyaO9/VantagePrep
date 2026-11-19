@@ -19,7 +19,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Fraunces:opsz,wght@9..144,700&family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Fraunces:opsz,wght@9..144,700&family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700;800;900&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --maroon:#7A1E30;
@@ -148,8 +148,13 @@
   .hero .tagline{font-size:1.25rem;font-weight:600;opacity:0.92;margin-bottom:22px;}
   .hero p.lede{font-size:1.02rem;opacity:0.9;margin-bottom:30px;max-width:520px;}
 
-  /* ---------- Vantage Prep x CHC lockup ---------- */
-  .chc-lockup{display:block;max-width:620px;width:100%;height:auto;margin-bottom:28px;}
+  /* ---------- Vantage Prep x CHC lockup (reconstructed as crisp vector + live text) ---------- */
+  .chc-lockup{display:flex;align-items:center;gap:16px;flex-wrap:wrap;width:fit-content;max-width:100%;margin-bottom:28px;}
+  .chc-lockup-icon{width:76px;height:76px;flex-shrink:0;}
+  .chc-lockup-word{font-family:'Fraunces',Georgia,serif;font-weight:700;color:#FFFFFF;font-size:2.1rem;line-height:1;white-space:nowrap;}
+  .chc-lockup-x{font-family:'Work Sans',sans-serif;font-weight:600;color:#D8D5CE;font-size:1.6rem;line-height:1;}
+  .chc-lockup-chc{width:66px;height:66px;flex-shrink:0;}
+  .chc-lockup-name{font-family:'Work Sans',sans-serif;font-weight:700;color:#FFFFFF;font-size:1.02rem;line-height:1.25;}
   .hero h1.event-title{
     font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:2.7rem;
     line-height:1.18;margin-bottom:14px;
@@ -477,7 +482,7 @@
   }
   @media(max-width:600px){
     .problem-grid, .pillars, .weekly-flow, .included-grid{grid-template-columns:1fr;}
-    .chc-lockup{max-width:360px;}
+    .chc-lockup-icon{width:56px;height:56px;} .chc-lockup-word{font-size:1.5rem;} .chc-lockup-x{font-size:1.15rem;} .chc-lockup-chc{width:48px;height:48px;} .chc-lockup-name{font-size:0.8rem;}
     .hero h1{font-size:1.9rem;}
     .approach-hero{padding:28px;}
     .guarantee-inner, .recommend-card{padding:28px;}
@@ -527,7 +532,21 @@
 <section class="hero" id="top">
   <div class="container hero-grid">
     <div>
-      <img class="chc-lockup" src="chc-banner.png" alt="Vantage Prep × Children's Health Council" width="800" height="97">
+      <div class="chc-lockup" role="img" aria-label="Vantage Prep x Children's Health Council">
+        <svg class="chc-lockup-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="100" cy="100" r="94" fill="#FFFFFF"/><circle cx="100" cy="100" r="94" fill="none" stroke="#3A506B" stroke-width="4"/>
+          <line x1="100" y1="21" x2="100" y2="12" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="139.5" y1="31.58" x2="144" y2="23.79" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="168.42" y1="60.5" x2="176.21" y2="56" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="179" y1="100" x2="188" y2="100" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="168.42" y1="139.5" x2="176.21" y2="144" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="139.5" y1="168.42" x2="144" y2="176.21" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="100" y1="179" x2="100" y2="188" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="60.5" y1="168.42" x2="56" y2="176.21" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="31.58" y1="139.5" x2="23.79" y2="144" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="21" y1="100" x2="12" y2="100" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="31.58" y1="60.5" x2="23.79" y2="56" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/><line x1="60.5" y1="31.58" x2="56" y2="23.79" stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"/>
+          <g fill="#7A1E30"><path d="M48 58 L79 58 L100 118 L123 58 L150 58 L100 148 Z"/><rect x="41" y="54" width="45" height="8" rx="2.5"/><rect x="117" y="54" width="40" height="8" rx="2.5"/></g>
+        </svg>
+        <span class="chc-lockup-word">Vantage Prep</span>
+        <span class="chc-lockup-x" aria-hidden="true">&times;</span>
+        <svg class="chc-lockup-chc" viewBox="0 0 175 175" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="87.5" cy="87.5" r="86" fill="#928B7B"/>
+          <path d="M 38.17 157.95 A 86 86 0 0 1 157.95 136.83" fill="none" stroke="#E16E41" stroke-width="15" stroke-linecap="round"/>
+          <text x="87.5" y="112" text-anchor="middle" font-family="'Work Sans',sans-serif" font-weight="800" font-size="86"><tspan fill="#8FCFE3">c</tspan><tspan fill="#F0B34F">h</tspan><tspan fill="#D7DE55">c</tspan></text>
+        </svg>
+        <span class="chc-lockup-name">Children's Health<br>Council</span>
+      </div>
       <h1 class="event-title">&ldquo;Let's Talk About Teen Mental Health&rdquo;<span class="event-subtitle-inline">&mdash; A Free Panel Discussion</span></h1>
       <p class="tagline">An honest, judgment-free conversation for parents, teens, and anyone who cares about a young person.</p>
       <p class="lede">Your teen may be carrying more than they're telling you. Join Vantage Prep and Children's Health Council live on Zoom for a free panel discussion on recognizing the signs and starting the conversation, followed by live Q&amp;A.</p>

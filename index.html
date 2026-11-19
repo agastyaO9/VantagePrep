@@ -153,9 +153,10 @@
   .chc-lockup{max-width:300px;width:100%;height:auto;background:var(--cream);padding:8px 14px;border-radius:10px;}
   .free-badge{width:88px;height:88px;flex-shrink:0;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.3));}
   .event-kicker{
-    display:block;font-family:'Work Sans',sans-serif;font-weight:600;letter-spacing:1.2px;
+    display:flex;align-items:center;gap:12px;font-family:'Work Sans',sans-serif;font-weight:600;letter-spacing:1.2px;
     text-transform:uppercase;font-size:0.8rem;opacity:0.85;margin-bottom:10px;
   }
+  .event-kicker .chc-lockup{max-width:220px;padding:6px 12px;margin:0;}
   .hero h1.event-title{
     font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:2.7rem;
     line-height:1.18;margin-bottom:14px;
@@ -533,7 +534,6 @@
   <div class="container hero-grid">
     <div>
       <div class="event-banner-row">
-        <img class="chc-lockup" src="chc-banner.png" alt="Vantage Prep × Children's Health Council" width="800" height="97">
         <svg class="free-badge" viewBox="0 0 160 160" role="img" aria-label="100 percent free admission" xmlns="http://www.w3.org/2000/svg">
           <circle cx="80" cy="80" r="74" fill="#FFFFFF"/>
           <circle cx="80" cy="80" r="74" fill="none" stroke="#3A506B" stroke-width="3"/>
@@ -542,7 +542,7 @@
           <text x="80" y="104" text-anchor="middle" font-family="'Sora',sans-serif" font-weight="800" font-size="30" fill="#7A1E30">FREE</text>
         </svg>
       </div>
-      <span class="event-kicker">Vantage Prep &amp; Children's Health Council Present</span>
+      <span class="event-kicker"><img class="chc-lockup" src="chc-banner.png" alt="Vantage Prep × Children's Health Council" width="800" height="97">Vantage Prep &amp; Children's Health Council Present</span>
       <h1 class="event-title">&ldquo;Let's Talk About Teen Mental Health&rdquo;<span class="event-subtitle-inline">&mdash; A Free Panel Discussion</span></h1>
       <p class="tagline">An honest, judgment-free conversation for parents, teens, and anyone who cares about a young person.</p>
       <p class="lede">Your teen may be carrying more than they're telling you. Join Vantage Prep and Children's Health Council live on Zoom for a free panel discussion on recognizing the signs and starting the conversation, followed by live Q&amp;A.</p>
@@ -808,9 +808,7 @@
 
       <!-- ===== HOST 2: panelist, Dr. Vidya Krishnan, Children's Health Council ===== -->
       <article class="team-card">
-        <div class="team-photo" style="border-radius:var(--radius);background:var(--cream);display:flex;align-items:center;justify-content:center;" aria-hidden="true">
-          <span style="font-family:'Sora',sans-serif;font-weight:800;font-size:3rem;color:var(--maroon);">VK</span>
-        </div>
+        <img class="team-photo" style="object-fit:cover;border-radius:var(--radius);" src="vidya-krishnan.jpg" alt="Dr. Vidya Krishnan, MD">
         <h3>Dr. Vidya Krishnan, MD</h3>
         <span class="team-role">Chief Psychiatrist &amp; Medical Director, <span class="chc-name">Children's Health Council</span></span>
         <ul class="credentials">

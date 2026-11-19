@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vantage Prep | Free Parent Seminar: Teen Mental Health</title>
+<title>Vantage Prep | "Let's Talk About Teen Mental Health" — Free Panel, Dec 2</title>
 
 <!-- ===== SEO / link previews ===== -->
-<meta name="description" content="Vantage Prep presents a free, one-time parent seminar on teen mental health. Real, practical guidance on recognizing the signs and supporting your teen, open to every parent at no cost.">
+<meta name="description" content="Vantage Prep, in partnership with Children's Health Council, presents a free panel discussion on teen mental health. Wed, Dec 2, 2026, 7:30–8:00 PM PST, live on Zoom. Register free.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Vantage Prep | Free Parent Seminar on Teen Mental Health">
-<meta property="og:description" content="A free, one-time seminar for parents on understanding and supporting their teen's mental health. One evening. Completely free. Hosted by Vantage Prep.">
-<meta property="og:image" content="https://agastyao9.github.io/VantagePrep/og-image.png">
+<meta property="og:title" content="Vantage Prep × CHC | Free Panel on Teen Mental Health — Dec 2">
+<meta property="og:description" content="A free, live panel discussion for parents, teens, and anyone who cares about a young person. Dec 2, 2026, 7:30–8:00 PM PST on Zoom. Hosted by Vantage Prep and Children's Health Council.">
+<meta property="og:image" content="https://agastyao9.github.io/VantagePrep/chc-banner.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- Brand mark, inline SVG favicon plus a PNG app icon for iOS home screens -->
@@ -19,7 +19,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Fraunces:opsz,wght@9..144,700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Fraunces:opsz,wght@9..144,700&family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --maroon:#7A1E30;
@@ -34,6 +34,7 @@
     --text-dark:#26282B;
     --text-muted:#5E6165;
     --border:#E4DFD6;
+    --chc-navy:#16213E;      /* use only for CHC's own name/logo treatment */
     --radius:14px;
     --shadow:0 8px 24px rgba(58,50,40,0.08);
     --shadow-lg:0 16px 40px rgba(58,50,40,0.14);
@@ -146,6 +147,22 @@
   .hero h1{font-size:2.6rem;font-weight:800;line-height:1.2;margin-bottom:14px;}
   .hero .tagline{font-size:1.25rem;font-weight:600;opacity:0.92;margin-bottom:22px;}
   .hero p.lede{font-size:1.02rem;opacity:0.9;margin-bottom:30px;max-width:520px;}
+
+  /* ---------- Vantage Prep x CHC event banner ---------- */
+  .event-banner-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:24px;}
+  .chc-lockup{max-width:300px;width:100%;height:auto;background:var(--cream);padding:8px 14px;border-radius:10px;}
+  .free-badge{width:88px;height:88px;flex-shrink:0;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.3));}
+  .event-kicker{
+    display:block;font-family:'Work Sans',sans-serif;font-weight:600;letter-spacing:1.2px;
+    text-transform:uppercase;font-size:0.8rem;opacity:0.85;margin-bottom:10px;
+  }
+  .hero h1.event-title{
+    font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:2.7rem;
+    line-height:1.18;margin-bottom:14px;
+  }
+  .event-subtitle-inline{display:block;font-size:0.6em;font-weight:700;opacity:0.9;margin-top:6px;}
+  .hero-subcta{font-family:'Work Sans',sans-serif;font-size:0.85rem;opacity:0.8;margin-top:12px;}
+  .chc-name{color:var(--chc-navy);font-weight:700;}
   .hero-badges{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px;}
   .badge{
     background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.35);
@@ -187,6 +204,22 @@
   }
   .problem-card h3{font-size:1.15rem;margin-bottom:10px;}
   .problem-card p{color:var(--text-muted);font-size:0.95rem;}
+
+  /* ---------- The Stakes (stat + crisis line) ---------- */
+  .stakes{background:var(--cream);text-align:center;padding:72px 0;}
+  .stakes-inner{max-width:740px;margin:0 auto 32px;}
+  .stat-number{
+    font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:4.4rem;
+    color:var(--maroon);line-height:1;margin-bottom:14px;
+  }
+  .stat-copy{font-family:'Work Sans',sans-serif;font-size:1.15rem;color:var(--text-dark);margin-bottom:10px;}
+  .stat-source{font-family:'Work Sans',sans-serif;font-size:0.82rem;color:var(--text-muted);font-style:italic;}
+  .crisis-line{
+    max-width:680px;margin:0 auto;background:#fff;border:2px solid var(--maroon);
+    border-radius:var(--radius);padding:18px 26px;font-family:'Work Sans',sans-serif;
+    font-size:0.96rem;color:var(--text-dark);text-align:center;box-shadow:var(--shadow);
+  }
+  .crisis-line a{color:var(--maroon);font-weight:800;text-decoration:underline;}
 
   /* ---------- Our Approach ---------- */
   .approach{background:var(--off-white);padding:100px 0;}
@@ -470,7 +503,7 @@
 <a href="#main" class="skip-link">Skip to main content</a>
 
 <div class="announce-bar">
-  <div class="container">A Free Parent Seminar on Teen Mental Health &mdash; date &amp; time to be announced. <a href="#contact">Reserve your spot now</a>.</div>
+  <div class="container">&ldquo;Let's Talk About Teen Mental Health&rdquo; &mdash; a free panel with Children's Health Council &middot; Wed, Dec 2, 2026 &middot; 7:30&ndash;8:00 PM PST &middot; Live on Zoom. <a href="#contact">Register free</a>.</div>
 </div>
 
 <header>
@@ -485,11 +518,11 @@
     </label>
     <div class="nav-links">
       <a href="#approach">Why This Matters</a>
-      <a href="#program">The Seminar</a>
+      <a href="#program">The Panel</a>
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="#contact" class="nav-cta">RSVP &mdash; Free</a>
+    <a href="#contact" class="nav-cta">Register Free</a>
   </nav>
 </header>
 
@@ -499,19 +532,31 @@
 <section class="hero" id="top">
   <div class="container hero-grid">
     <div>
-      <h1>Your Teen Is Carrying More Than They're Telling You.</h1>
-      <p class="tagline">A Free Parent Seminar on Teen Mental Health</p>
-      <p class="lede">One evening. Completely free. Real, practical guidance on recognizing the signs, starting the conversation, and supporting your teen's mental health, before a quiet struggle becomes a crisis.</p>
+      <div class="event-banner-row">
+        <img class="chc-lockup" src="chc-banner.png" alt="Vantage Prep × Children's Health Council" width="800" height="97">
+        <svg class="free-badge" viewBox="0 0 160 160" role="img" aria-label="100 percent free admission" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="80" cy="80" r="74" fill="#FFFFFF"/>
+          <circle cx="80" cy="80" r="74" fill="none" stroke="#3A506B" stroke-width="3"/>
+          <g stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"><line x1="80.0" y1="10.0" x2="80.0" y2="20.0"/><line x1="106.8" y1="15.3" x2="103.0" y2="24.6"/><line x1="129.5" y1="30.5" x2="122.4" y2="37.6"/><line x1="144.7" y1="53.2" x2="135.4" y2="57.0"/><line x1="150.0" y1="80.0" x2="140.0" y2="80.0"/><line x1="144.7" y1="106.8" x2="135.4" y2="103.0"/><line x1="129.5" y1="129.5" x2="122.4" y2="122.4"/><line x1="106.8" y1="144.7" x2="103.0" y2="135.4"/><line x1="80.0" y1="150.0" x2="80.0" y2="140.0"/><line x1="53.2" y1="144.7" x2="57.0" y2="135.4"/><line x1="30.5" y1="129.5" x2="37.6" y2="122.4"/><line x1="15.3" y1="106.8" x2="24.6" y2="103.0"/><line x1="10.0" y1="80.0" x2="20.0" y2="80.0"/><line x1="15.3" y1="53.2" x2="24.6" y2="57.0"/><line x1="30.5" y1="30.5" x2="37.6" y2="37.6"/><line x1="53.2" y1="15.3" x2="57.0" y2="24.6"/></g>
+          <text x="80" y="72" text-anchor="middle" font-family="'Sora',sans-serif" font-weight="800" font-size="26" fill="#7A1E30">100%</text>
+          <text x="80" y="104" text-anchor="middle" font-family="'Sora',sans-serif" font-weight="800" font-size="30" fill="#7A1E30">FREE</text>
+        </svg>
+      </div>
+      <span class="event-kicker">Vantage Prep &amp; Children's Health Council Present</span>
+      <h1 class="event-title">&ldquo;Let's Talk About Teen Mental Health&rdquo;<span class="event-subtitle-inline">&mdash; A Free Panel Discussion</span></h1>
+      <p class="tagline">An honest, judgment-free conversation for parents, teens, and anyone who cares about a young person.</p>
+      <p class="lede">Your teen may be carrying more than they're telling you. Join Vantage Prep and Children's Health Council live on Zoom for a free panel discussion on recognizing the signs and starting the conversation, followed by live Q&amp;A.</p>
       <div class="hero-badges">
+        <span class="badge">Wed, Dec 2, 2026</span>
+        <span class="badge">7:30&ndash;8:00 PM PST</span>
+        <span class="badge">Live on Zoom</span>
         <span class="badge">100% Free</span>
-        <span class="badge">One Evening Only</span>
-        <span class="badge">For Parents</span>
-        <span class="badge">Date &amp; Time: Coming Soon</span>
       </div>
       <div class="hero-actions">
-        <a href="#contact" class="btn">Reserve Your Spot</a>
+        <a href="#contact" class="btn">Register Free</a>
         <a href="#approach" class="btn-outline">Why This Matters</a>
       </div>
+      <p class="hero-subcta">Zoom link sent after you sign up.</p>
     </div>
     <!-- Hero artwork, original inline SVG. To swap in a photo later, replace this
          whole <div class="hero-art"> block with:
@@ -662,6 +707,20 @@
   </div>
 </section>
 
+<!-- ===================== THE STAKES (verified stat + crisis line) ===================== -->
+<section class="stakes">
+  <div class="container">
+    <div class="stakes-inner">
+      <div class="stat-number">1 in 5</div>
+      <p class="stat-copy">high school students say they have seriously considered suicide in the past year.</p>
+      <p class="stat-source">Source: CDC Youth Risk Behavior Survey, 2023</p>
+    </div>
+    <div class="crisis-line">
+      <strong>In crisis right now?</strong> The 988 Suicide &amp; Crisis Lifeline is free and available 24/7 &mdash; call or text <a href="tel:988">988</a>.
+    </div>
+  </div>
+</section>
+
 <!-- ===================== OUR APPROACH ===================== -->
 <section class="approach" id="approach">
   <div class="container">
@@ -730,7 +789,7 @@
   <div class="container">
     <span class="eyebrow">About Us</span>
     <h2 class="section-title">Meet Your Hosts</h2>
-    <p class="team-intro">We started Vantage Prep believing every student deserves to be truly seen, not just taught. That belief doesn't stop at academics. We're hosting this seminar because we've seen how much teens carry silently, and we want parents to have real tools to help. (Co-founder Aditya Garg handles logistics and the site behind the scenes.)</p>
+    <p class="team-intro">We started Vantage Prep believing every student deserves to be truly seen, not just taught. That belief doesn't stop at academics. For this panel, we've partnered with <span class="chc-name">Children's Health Council</span> (CHC) to bring parents real clinical expertise alongside honest, firsthand stories. (Co-founder Aditya Garg handles logistics and the site behind the scenes.)</p>
 
     <div class="team-grid">
 
@@ -741,46 +800,49 @@
         <span class="team-role">Co-Founder &amp; Host</span>
         <ul class="credentials">
           <li>Founded Vantage Prep to help students and families get real support, not just another program.</li>
-          <li>Personally organizing and hosting this seminar from start to finish.</li>
+          <li>Personally organizing and co-hosting this panel from start to finish.</li>
           <li>Believes parents deserve honest, practical tools, not vague advice.</li>
           <li>Wants every family who attends to walk away with something they can actually use.</li>
         </ul>
       </article>
 
-      <!-- ===== HOST 2: guest speaker, mental health professional, to be announced ===== -->
+      <!-- ===== HOST 2: panelist, Dr. Vidya Krishnan, Children's Health Council ===== -->
       <article class="team-card">
-        <div class="slot team-photo" style="border-radius:var(--radius);" aria-hidden="true"></div>
-        <h3>To Be Announced</h3>
-        <span class="team-role">Guest Speaker &mdash; Mental Health Professional</span>
+        <div class="team-photo" style="border-radius:var(--radius);background:var(--cream);display:flex;align-items:center;justify-content:center;" aria-hidden="true">
+          <span style="font-family:'Sora',sans-serif;font-weight:800;font-size:3rem;color:var(--maroon);">VK</span>
+        </div>
+        <h3>Dr. Vidya Krishnan, MD</h3>
+        <span class="team-role">Chief Psychiatrist &amp; Medical Director, <span class="chc-name">Children's Health Council</span></span>
         <ul class="credentials">
-          <li><span class="fill-line"></span></li>
-          <li><span class="fill-line"></span></li>
-          <li><span class="fill-line"></span></li>
+          <li>Faculty, Stanford University School of Medicine.</li>
+          <li>Leading the clinical portion of the panel discussion on teen mental health.</li>
+          <li>Joins live for Q&amp;A to answer parents' questions directly.</li>
         </ul>
       </article>
 
     </div>
+    <p class="team-intro" style="margin-top:28px;margin-bottom:0;font-style:italic;">Also joining the panel: a local high school student and a college student, sharing their own experiences firsthand.</p>
   </div>
 </section>
 
 <!-- ===================== PROGRAM DETAILS ===================== -->
 <section class="program" id="program">
   <div class="container">
-    <span class="eyebrow">The Seminar</span>
-    <h2 class="section-title">Understanding &amp; Supporting Your Teen's Mental Health</h2>
+    <span class="eyebrow">The Panel Discussion</span>
+    <h2 class="section-title">&ldquo;Let's Talk About Teen Mental Health&rdquo; &mdash; A Free Panel Discussion</h2>
     <div class="key-facts">
-      <span class="key-fact">One Evening</span>
-      <span class="key-fact">Time: To Be Announced</span>
+      <span class="key-fact">Wed, Dec 2, 2026</span>
+      <span class="key-fact">7:30&ndash;8:00 PM PST</span>
     </div>
-    <p class="section-sub">A free, single-evening seminar for parents. Here's what to expect.</p>
+    <p class="section-sub">Hosted by Vantage Prep in partnership with <span class="chc-name">Children's Health Council</span>. Here's what to expect.</p>
 
     <div class="program-badges">
-      <span class="program-badge">One evening only</span>
-      <span class="program-badge">Date &amp; time: TBA</span>
+      <span class="program-badge">Wed, Dec 2, 2026</span>
+      <span class="program-badge">7:30&ndash;8:00 PM PST</span>
+      <span class="program-badge">Live on Zoom</span>
+      <span class="program-badge">Panel + live Q&amp;A</span>
       <span class="program-badge">Completely free</span>
-      <span class="program-badge">For parents</span>
       <span class="program-badge">Open to all families</span>
-      <span class="program-badge">No registration fee</span>
     </div>
 
     <div class="program-grid">
@@ -789,7 +851,7 @@
         <ul>
           <li>Your teen may be struggling in ways you can't see yet, and early awareness changes outcomes.</li>
           <li>Most parents have never been taught what warning signs actually look like.</li>
-          <li>This seminar gives you a safe space to ask real questions, free of judgment.</li>
+          <li>The live Q&amp;A gives you a safe space to ask real questions, free of judgment.</li>
         </ul>
       </div>
       <div class="program-card">
@@ -871,7 +933,11 @@
       </details>
       <details class="faq-item">
         <summary>When and where is it?</summary>
-        <div class="faq-body">Date, time, and location are being finalized and will be announced soon. Reserve your spot below and we'll notify you as soon as details are confirmed.</div>
+        <div class="faq-body">Wednesday, December 2, 2026, from 7:30&ndash;8:00 PM PST, live on Zoom. The Zoom link is not published here &mdash; it's emailed to you after you register.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What's the format?</summary>
+        <div class="faq-body">A panel discussion followed by a live Q&amp;A, so you can ask your own questions directly.</div>
       </details>
       <details class="faq-item">
         <summary>Do I need to register in advance?</summary>
@@ -886,8 +952,8 @@
         <div class="faq-body">Yes, this is currently planned as a single evening seminar, not an ongoing program.</div>
       </details>
       <details class="faq-item">
-        <summary>Who is hosting the seminar?</summary>
-        <div class="faq-body">The seminar is hosted by Agastya Kondamuri of Vantage Prep, alongside a mental health professional (to be announced).</div>
+        <summary>Who is hosting the panel?</summary>
+        <div class="faq-body">Vantage Prep, in partnership with Children's Health Council (CHC). The panel features Dr. Vidya Krishnan, MD &mdash; Chief Psychiatrist &amp; Medical Director at CHC and faculty at Stanford University School of Medicine &mdash; along with a local high school student and a college student sharing their own experiences.</div>
       </details>
       <details class="faq-item">
         <summary>Will this be recorded or available afterward?</summary>
@@ -910,8 +976,8 @@
   <div class="container contact-grid">
     <div>
       <span class="eyebrow">Get In Touch</span>
-      <h2 class="section-title">Reserve Your Free Spot</h2>
-      <p style="opacity:0.9;margin-bottom:28px;">This seminar is completely free, but space is limited. Reserve your spot below or reach out with any questions.</p>
+      <h2 class="section-title">Register for the Panel &mdash; It's Free</h2>
+      <p style="opacity:0.9;margin-bottom:28px;">This panel is completely free, but space is limited. Register below or reach out with any questions.</p>
       <div class="contact-info-item">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
         <a href="mailto:vantageprep1@gmail.com" style="color:#fff;text-decoration:none;">vantageprep1@gmail.com</a>
@@ -922,14 +988,15 @@
       </div>
       <div class="contact-info-item">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span>Location: To Be Announced</span>
+        <span>Live on Zoom &mdash; link emailed after you register</span>
       </div>
     </div>
 
     <div class="contact-form">
-      <h3>RSVP &mdash; It's Free</h3>
-      <p class="form-note">This seminar is completely free. Fill out the short form below to reserve your spot, and we'll follow up with date, time, and location details as soon as they're confirmed.</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAuKX-lpjqhd1z6y1qtb-i8kZHQ8Rk23MJwriLEhhrVFPFKA/viewform?usp=header" class="btn" target="_blank" rel="noopener">Reserve My Free Spot</a>
+      <h3>Register Free</h3>
+      <p class="form-note">This panel is completely free. Fill out the short form below to register, and we'll see you live on Zoom, Wed, Dec 2, 2026 at 7:30 PM PST.</p>
+      <a href="https://docs.google.com/forms/d/1m2xiQpUJ7CXV9AxfvAofwrZhT0wxgaXx5_REBcOlvyg/viewform" class="btn" target="_blank" rel="noopener">Register Free</a>
+      <p class="form-note" style="margin-top:10px;margin-bottom:0;font-size:0.85rem;">Zoom link sent after you sign up.</p>
       <p class="form-note" style="margin-top:16px;margin-bottom:0;">Questions first? Email us using the address on the left and we will get back to you the same day.</p>
     </div>
   </div>
@@ -946,12 +1013,15 @@
       </div>
       <div class="footer-links">
         <a href="#approach">Why This Matters</a>
-        <a href="#program">The Seminar</a>
+        <a href="#program">The Panel</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
-    <div class="footer-bottom">© 2026 Vantage Prep. Supporting students and families, beyond the classroom.</div>
+    <div class="footer-bottom">
+      <div style="margin-bottom:8px;">Hosted by Vantage Prep in partnership with Children's Health Council &middot; Questions? Agastya Kondamuri &mdash; <a href="mailto:agastya.kondamuri@icloud.com" style="color:inherit;text-decoration:underline;">agastya.kondamuri@icloud.com</a></div>
+      <div>© 2026 Vantage Prep. Supporting students and families, beyond the classroom.</div>
+    </div>
   </div>
 </footer>
 

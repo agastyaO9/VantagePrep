@@ -148,15 +148,8 @@
   .hero .tagline{font-size:1.25rem;font-weight:600;opacity:0.92;margin-bottom:22px;}
   .hero p.lede{font-size:1.02rem;opacity:0.9;margin-bottom:30px;max-width:520px;}
 
-  /* ---------- Vantage Prep x CHC event banner ---------- */
-  .event-banner-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:24px;}
-  .chc-lockup{max-width:300px;width:100%;height:auto;background:var(--cream);padding:8px 14px;border-radius:10px;}
-  .free-badge{width:88px;height:88px;flex-shrink:0;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.3));}
-  .event-kicker{
-    display:flex;align-items:center;gap:12px;font-family:'Work Sans',sans-serif;font-weight:600;letter-spacing:1.2px;
-    text-transform:uppercase;font-size:0.8rem;opacity:0.85;margin-bottom:10px;
-  }
-  .event-kicker .chc-lockup{max-width:220px;padding:6px 12px;margin:0;}
+  /* ---------- Vantage Prep x CHC lockup ---------- */
+  .chc-lockup{display:block;max-width:620px;width:100%;height:auto;margin-bottom:28px;}
   .hero h1.event-title{
     font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:2.7rem;
     line-height:1.18;margin-bottom:14px;
@@ -484,6 +477,7 @@
   }
   @media(max-width:600px){
     .problem-grid, .pillars, .weekly-flow, .included-grid{grid-template-columns:1fr;}
+    .chc-lockup{max-width:360px;}
     .hero h1{font-size:1.9rem;}
     .approach-hero{padding:28px;}
     .guarantee-inner, .recommend-card{padding:28px;}
@@ -533,16 +527,7 @@
 <section class="hero" id="top">
   <div class="container hero-grid">
     <div>
-      <div class="event-banner-row">
-        <svg class="free-badge" viewBox="0 0 160 160" role="img" aria-label="100 percent free admission" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="80" cy="80" r="74" fill="#FFFFFF"/>
-          <circle cx="80" cy="80" r="74" fill="none" stroke="#3A506B" stroke-width="3"/>
-          <g stroke="#C99A3B" stroke-width="3.2" stroke-linecap="round"><line x1="80.0" y1="10.0" x2="80.0" y2="20.0"/><line x1="106.8" y1="15.3" x2="103.0" y2="24.6"/><line x1="129.5" y1="30.5" x2="122.4" y2="37.6"/><line x1="144.7" y1="53.2" x2="135.4" y2="57.0"/><line x1="150.0" y1="80.0" x2="140.0" y2="80.0"/><line x1="144.7" y1="106.8" x2="135.4" y2="103.0"/><line x1="129.5" y1="129.5" x2="122.4" y2="122.4"/><line x1="106.8" y1="144.7" x2="103.0" y2="135.4"/><line x1="80.0" y1="150.0" x2="80.0" y2="140.0"/><line x1="53.2" y1="144.7" x2="57.0" y2="135.4"/><line x1="30.5" y1="129.5" x2="37.6" y2="122.4"/><line x1="15.3" y1="106.8" x2="24.6" y2="103.0"/><line x1="10.0" y1="80.0" x2="20.0" y2="80.0"/><line x1="15.3" y1="53.2" x2="24.6" y2="57.0"/><line x1="30.5" y1="30.5" x2="37.6" y2="37.6"/><line x1="53.2" y1="15.3" x2="57.0" y2="24.6"/></g>
-          <text x="80" y="72" text-anchor="middle" font-family="'Sora',sans-serif" font-weight="800" font-size="26" fill="#7A1E30">100%</text>
-          <text x="80" y="104" text-anchor="middle" font-family="'Sora',sans-serif" font-weight="800" font-size="30" fill="#7A1E30">FREE</text>
-        </svg>
-      </div>
-      <span class="event-kicker"><img class="chc-lockup" src="chc-banner.png" alt="Vantage Prep × Children's Health Council" width="800" height="97">Vantage Prep &amp; Children's Health Council Present</span>
+      <img class="chc-lockup" src="chc-banner.png" alt="Vantage Prep × Children's Health Council" width="800" height="97">
       <h1 class="event-title">&ldquo;Let's Talk About Teen Mental Health&rdquo;<span class="event-subtitle-inline">&mdash; A Free Panel Discussion</span></h1>
       <p class="tagline">An honest, judgment-free conversation for parents, teens, and anyone who cares about a young person.</p>
       <p class="lede">Your teen may be carrying more than they're telling you. Join Vantage Prep and Children's Health Council live on Zoom for a free panel discussion on recognizing the signs and starting the conversation, followed by live Q&amp;A.</p>
